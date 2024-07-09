@@ -1,0 +1,27 @@
+model BudgetItem {
+  id                    String   @id @default(auto()) @map("_id") @db.ObjectId
+  order                 Int
+  budgetShortId         Int
+  license               Int
+  description           String
+  quantity              Float
+  originalUnitAmount    Float
+  originalGrossAmount   Float
+  modifiedUnitAmount    Float
+  modifiedGrossAmount   Float
+  grossAmountIsModified Boolean
+  unitAmount            Float
+  grossAmount           Float
+  netAmount             Float
+  discountAmount        Float
+  discountPercent       Float
+  width                 Int
+  height                Int
+  glass                 String
+  budget                Budget?  @relation(fields: [budgetId], references: [id])
+  budgetId              String?  @db.ObjectId
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  @@map("budget_items")
+}

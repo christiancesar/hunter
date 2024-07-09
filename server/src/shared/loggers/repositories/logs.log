@@ -1,0 +1,1042 @@
+[INFO] [2024-06-11T21:49:35.857Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-11T21:49:39.431Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-11T21:50:02.269Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-11T21:50:05.944Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"budgetStatus":"F","finalDate":"","initialDate":"","budgetId":0} 
+[INFO] [2024-06-11T21:50:07.783Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-11T21:50:13.051Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3752","3739","3738","3731","3727","3726","3722","3721","3719","3706"],
+              Budgets found: 10 
+[INFO] [2024-06-11T21:50:13.965Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-11T21:50:13.966Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3752,3739,3738,3731,3727,3726,3722,3721,3719,3706 
+[INFO] [2024-06-11T21:50:13.967Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-11T21:50:19.652Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-11T21:50:25.017Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-11T21:50:30.324Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-11T21:50:35.535Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-11T21:50:40.858Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-11T21:50:46.896Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-11T21:50:52.088Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 6,
+          Loose Items: 0,
+          Total Items: 6,
+          Updated new hunting on budget 3722 in database ✔
+         
+[INFO] [2024-06-11T21:50:57.676Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 20,
+          Loose Items: 0,
+          Total Items: 20,
+          Updated new hunting on budget 3721 in database ✔
+         
+[INFO] [2024-06-11T21:51:03.197Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 10,
+          Loose Items: 0,
+          Total Items: 10,
+          Updated new hunting on budget 3719 in database ✔
+         
+[INFO] [2024-06-11T21:51:08.798Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3706 in database ✔
+         
+[INFO] [2024-06-13T18:51:18.402Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T18:51:23.152Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T18:52:08.876Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T18:52:14.334Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T18:52:37.555Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-13T18:52:41.993Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-13T18:52:43.850Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-13T18:52:46.512Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3727","3726","3722"],
+              Budgets found: 10 
+[INFO] [2024-06-13T18:52:47.435Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-13T18:52:47.436Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3727,3726,3722 
+[INFO] [2024-06-13T18:52:47.437Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-13T18:52:53.496Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-13T18:52:59.037Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-13T18:53:04.765Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-13T18:53:10.205Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-13T18:53:15.796Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-13T18:53:20.985Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-13T18:53:26.242Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-13T18:53:31.389Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-13T18:53:37.214Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-13T18:53:42.395Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 6,
+          Loose Items: 0,
+          Total Items: 6,
+          Updated new hunting on budget 3722 in database ✔
+         
+[INFO] [2024-06-13T19:01:55.016Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T19:01:59.091Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T19:02:38.407Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T19:02:41.922Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T19:03:05.128Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-13T19:03:10.155Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-13T19:03:11.993Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-13T19:03:14.302Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3727","3726","3722"],
+              Budgets found: 10 
+[INFO] [2024-06-13T19:03:15.217Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-13T19:03:15.218Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3727,3726,3722 
+[INFO] [2024-06-13T19:03:15.219Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-13T19:03:21.139Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-13T19:03:27.463Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-13T19:03:32.913Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-13T19:03:39.164Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-13T19:03:44.500Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-13T19:03:49.799Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-13T19:03:55.187Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-13T19:04:00.210Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-13T19:04:05.995Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-13T19:04:11.584Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 6,
+          Loose Items: 0,
+          Total Items: 6,
+          Updated new hunting on budget 3722 in database ✔
+         
+[INFO] [2024-06-13T19:04:11.585Z] [BudgetHunter] [toHunt]
+   [Message]: Finished Hunting. Budgets: 10 
+[INFO] [2024-06-13T19:41:06.768Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T19:41:10.222Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T19:41:33.491Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-13T19:41:37.268Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-13T19:41:39.105Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-13T19:41:41.339Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3727","3726","3722"],
+              Budgets found: 10 
+[INFO] [2024-06-13T19:41:42.254Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-13T19:41:42.255Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3727,3726,3722 
+[INFO] [2024-06-13T19:41:42.256Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-13T19:41:48.083Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-13T19:41:53.726Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-13T19:41:59.252Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-13T19:42:04.550Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-13T19:42:10.107Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-13T19:42:15.492Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-13T19:42:20.740Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-13T19:42:26.061Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-13T19:42:31.609Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-13T19:42:37.025Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 6,
+          Loose Items: 0,
+          Total Items: 6,
+          Updated new hunting on budget 3722 in database ✔
+         
+[INFO] [2024-06-13T19:42:37.026Z] [BudgetHunter] [toHunt]
+   [Message]: Finished Hunting. Budgets: 10 
+[INFO] [2024-06-13T19:44:28.468Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T19:44:32.001Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T19:44:55.054Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-13T19:44:58.996Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-13T19:45:00.835Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-13T19:45:03.066Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3727","3726","3722"],
+              Budgets found: 10 
+[INFO] [2024-06-13T19:45:03.983Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-13T19:45:03.984Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3727,3726,3722 
+[INFO] [2024-06-13T19:45:03.984Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-13T19:45:10.032Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-13T19:45:15.558Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-13T19:45:21.086Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-13T19:45:26.413Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-13T19:45:32.054Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-13T19:45:37.247Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-13T19:45:42.562Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-13T19:45:47.936Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-13T19:45:53.433Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-13T19:45:58.850Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 6,
+          Loose Items: 0,
+          Total Items: 6,
+          Updated new hunting on budget 3722 in database ✔
+         
+[INFO] [2024-06-13T19:45:58.851Z] [BudgetHunter] [toHunt]
+   [Message]: Finished Hunting. Budgets: 10 
+[INFO] [2024-06-13T19:49:25.616Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T19:49:29.103Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T19:49:51.408Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-13T19:49:54.840Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-13T19:49:56.691Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-13T19:49:58.950Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3727","3726","3722"],
+              Budgets found: 10 
+[INFO] [2024-06-13T19:49:59.871Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-13T19:49:59.871Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3727,3726,3722 
+[INFO] [2024-06-13T19:49:59.872Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-13T19:50:05.763Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-13T19:50:11.305Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-13T19:50:16.906Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-13T19:50:22.151Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-13T19:50:28.083Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-13T19:50:33.379Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-13T19:50:38.647Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-13T19:50:44.251Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-13T19:50:49.823Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-13T19:50:55.278Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 6,
+          Loose Items: 0,
+          Total Items: 6,
+          Updated new hunting on budget 3722 in database ✔
+         
+[INFO] [2024-06-13T19:50:55.280Z] [BudgetHunter] [toHunt]
+   [Message]: Finished Hunting. Budgets: 10 
+[INFO] [2024-06-13T19:53:12.839Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T19:53:16.334Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T19:53:39.265Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-13T19:53:42.940Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-13T19:53:44.796Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-13T19:53:47.008Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3727","3726","3722"],
+              Budgets found: 10 
+[INFO] [2024-06-13T19:53:47.930Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-13T19:53:47.931Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3727,3726,3722 
+[INFO] [2024-06-13T19:53:47.931Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-13T19:53:53.776Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-13T19:53:59.534Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-13T19:54:05.014Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-13T19:54:10.672Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-13T19:54:16.254Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-13T19:54:21.496Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-13T19:54:26.876Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-13T19:54:32.259Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-13T19:54:37.842Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-13T19:54:43.283Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 6,
+          Loose Items: 0,
+          Total Items: 6,
+          Updated new hunting on budget 3722 in database ✔
+         
+[INFO] [2024-06-13T19:54:43.285Z] [BudgetHunter] [toHunt]
+   [Message]: Finished Hunting. Budgets: 10 
+[INFO] [2024-06-13T20:26:32.387Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-13T20:26:35.954Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-13T20:27:00.325Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-13T20:27:05.392Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-13T20:27:07.246Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-13T20:27:09.425Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3727","3726","3722"],
+              Budgets found: 10 
+[INFO] [2024-06-13T20:27:10.347Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-13T20:27:10.348Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3727,3726,3722 
+[INFO] [2024-06-13T20:27:10.350Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-13T20:27:16.347Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-13T20:27:21.706Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-13T20:27:27.125Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-13T20:27:32.375Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-13T20:27:38.006Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-13T20:27:43.437Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-13T20:27:48.711Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-13T20:27:53.967Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-13T20:27:59.541Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[ERROR] [2024-06-13T20:28:09.468Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+            Class Error: Error
+            Message: Navigating frame was detached
+            Custom Message Error: Error on budget 3722
+           
+[ERROR] [2024-06-13T20:28:09.469Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+          Class Error: Error
+          Message: 
+          Custom Message Error: Error on get budgets
+         
+[ERROR] [2024-06-13T20:28:09.470Z] [BudgetHunter] [toHunt]
+   [Message]: 
+          Class Error: Error
+          Message: 
+          Custom Message Error: "Contact the developer to check, there are errors in data capture."}
+         
+[INFO] [2024-06-15T19:03:12.269Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-15T19:03:18.072Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-15T19:03:42.590Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-15T19:03:48.927Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-15T19:03:50.807Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-15T19:03:54.314Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3773","3762","3761","3752","3739","3738","3731","3729","3727","3726"],
+              Budgets found: 10 
+[INFO] [2024-06-15T19:03:55.252Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-15T19:03:55.254Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3773,3762,3761,3752,3739,3738,3731,3729,3727,3726 
+[INFO] [2024-06-15T19:03:55.255Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-15T19:04:06.157Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-15T19:04:13.627Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-15T19:04:20.712Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-15T19:04:27.473Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-15T19:04:39.206Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-15T19:04:45.134Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-15T19:04:52.094Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-15T19:04:59.666Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 3,
+          Loose Items: 1,
+          Total Items: 4,
+          Updated new hunting on budget 3729 in database ✔
+         
+[INFO] [2024-06-15T19:05:07.134Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-15T19:05:15.460Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3726 in database ✔
+         
+[INFO] [2024-06-15T19:05:36.461Z] [BudgetHunter] [toHunt]
+   [Message]: Finished Hunting. Budgets: 10 
+[INFO] [2024-06-17T21:01:21.387Z] [BudgetHunter] [configure]
+   [Message]: CONFIGURE PUPEETEER SETTINGS 
+[INFO] [2024-06-17T21:01:26.297Z] [BudgetHunter] [goToLoginPage]
+   [Message]: GO TO THE LOGIN PAGE 
+[INFO] [2024-06-17T21:01:49.841Z] [BudgetHunter] [goToBudgetPage]
+   [Message]: GO TO THE BUDGET PAGE 
+[INFO] [2024-06-17T21:01:54.505Z] [BudgetHunter] [configure]
+   [Message]: APPLY FILTER: {"initialDate":"","finalDate":"","budgetStatus":"F","budgetId":0} 
+[INFO] [2024-06-17T21:01:56.346Z] [BudgetHunter] [getBudgets]
+   [Message]: STARTING TO GET BUDGETS 
+[INFO] [2024-06-17T21:02:00.673Z] [BudgetHunter] [getBudgets]
+   [Message]: 
+              Page 1 of 1,
+              Budgets: ["3782","3773","3762","3761","3752","3739","3738","3731","3729","3727"],
+              Budgets found: 10 
+[INFO] [2024-06-17T21:02:01.587Z] [BudgetHunter] [getBudgets]
+   [Message]: FINISHED TO GET BUDGETS AND START SAVING IN MEMORY. 
+[INFO] [2024-06-17T21:02:01.589Z] [BudgetHunter] [getBudgets]
+   [Message]: SAVED 10 BUDGETS IN MEMORY. BUDGETS: 3782,3773,3762,3761,3752,3739,3738,3731,3729,3727 
+[INFO] [2024-06-17T21:02:01.593Z] [BudgetHunter] [getBudgetItems]
+   [Message]: STARTING TO GET ITEMS BUDGETS  
+[INFO] [2024-06-17T21:02:08.125Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 1 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3782 in database ✔
+         
+[INFO] [2024-06-17T21:02:13.823Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 2 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3773 in database ✔
+         
+[INFO] [2024-06-17T21:02:20.147Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 3 of 10,
+          Items: 0,
+          Loose Items: 2,
+          Total Items: 2,
+          Updated new hunting on budget 3762 in database ✔
+         
+[INFO] [2024-06-17T21:02:26.174Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 4 of 10,
+          Items: 0,
+          Loose Items: 3,
+          Total Items: 3,
+          Updated new hunting on budget 3761 in database ✔
+         
+[INFO] [2024-06-17T21:02:31.873Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 5 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3752 in database ✔
+         
+[INFO] [2024-06-17T21:02:38.191Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 6 of 10,
+          Items: 0,
+          Loose Items: 1,
+          Total Items: 1,
+          Updated new hunting on budget 3739 in database ✔
+         
+[INFO] [2024-06-17T21:02:44.908Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 7 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3738 in database ✔
+         
+[INFO] [2024-06-17T21:02:50.913Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 8 of 10,
+          Items: 2,
+          Loose Items: 0,
+          Total Items: 2,
+          Updated new hunting on budget 3731 in database ✔
+         
+[INFO] [2024-06-17T21:02:57.239Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 9 of 10,
+          Items: 3,
+          Loose Items: 1,
+          Total Items: 4,
+          Updated new hunting on budget 3729 in database ✔
+         
+[INFO] [2024-06-17T21:03:02.945Z] [BudgetHunter] [getBudgetItems]
+   [Message]: 
+          Budget: 10 of 10,
+          Items: 1,
+          Loose Items: 0,
+          Total Items: 1,
+          Updated new hunting on budget 3727 in database ✔
+         
+[INFO] [2024-06-17T21:03:03.243Z] [BudgetHunter] [toHunt]
+   [Message]: Finished Hunting. Budgets: 10 

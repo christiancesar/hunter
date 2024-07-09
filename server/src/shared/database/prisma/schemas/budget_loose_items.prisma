@@ -1,0 +1,23 @@
+model BudgetLooseItem {
+  id              String   @id @default(auto()) @map("_id") @db.ObjectId
+  code            String
+  internal_code   String
+  description     String
+  color           String
+  width           Int
+  height          Int
+  quantity        Float
+  unitAmount      Float
+  grossAmount     Float
+  netAmount       Float
+  discountAmount  Float
+  discountPercent Float
+  measurement     String
+  // budget          Budget?  @relation(fields: [budgetId], references: [id])
+  budgetId        String?  @db.ObjectId
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([budgetId, internal_code])
+  @@map("budget_loose_items")
+}

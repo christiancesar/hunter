@@ -1,0 +1,24 @@
+* {
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+table {
+  border-collapse: collapse;
+}
+th, td{
+  border: 1px solid rgb(65, 63, 2);
+  padding: 0.5rem;
+}
+
+tr {
+  height: 2rem;
+}
+
+tfoot {
+  font-weight: bold;
+}
+tfoot>tr>td {
+  border: none;
+  font-size: 14px;
+}

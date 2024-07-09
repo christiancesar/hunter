@@ -1,0 +1,18 @@
+{
+  "name": "forecast-electron-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc && copyfiles -f src/index.html build",
+    "start": "npm run compile && electron"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "electron": "^30.0.6",
+    "typescript": "^5.4.5"
+  }
+}

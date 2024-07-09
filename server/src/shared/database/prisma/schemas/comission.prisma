@@ -1,0 +1,19 @@
+model Commission {
+  id                      String                @id @default(auto()) @map("_id") @db.ObjectId
+  employees               Employee[]            @relation(fields: [employeeIds], references: [id])
+  employeeIds             String[]              @db.ObjectId
+  budgetShortId           Int
+  budgetId                String                @db.ObjectId
+  budgetItemId            String                @db.ObjectId
+  budgetItemQuantity      Float                 @default(0)
+  budgetItemAmount        Float
+  commissionPercent       Float
+  divisionBy              Float
+  commissionAmount        Float
+  serviceTypeCommission   ServiceTypeCommission @relation(fields: [serviceTypeCommissionId], references: [id])
+  serviceTypeCommissionId String                @db.ObjectId
+  createdAt               DateTime              @default(now())
+  updatedAt               DateTime              @updatedAt
+
+  @@map("commissions")
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @page {
+      size: A4 landscape !important;
+    }
+
+    * {
+      font-family: "Roboto";
+      font-size: 12px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid rgb(65, 63, 2);
+      padding: 0.5rem;
+    }
+
+    tr {
+      height: 2rem;
+    }
+
+    tfoot {
+      font-weight: bold;
+    }
+
+    tfoot>tr>td {
+      border: none;
+      font-size: 14px;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commission Report</title>
+</head>
+
+<body>
+  <div style="margin: 10; padding: 10;">
+    <header>
+      <div>
+        <div
+          style="display: flex; justify-content: space-between; background: rgb(55,49,5); background: linear-gradient(90deg, rgba(55,49,5,1) 0%, rgba(194,164,11,1) 36%, rgba(255,209,0,1) 100%);; padding: 0.5rem;">
+          <h2 style="font-family: Space Grotesk; font-size: xx-large; color: aliceblue;">{{data.header.companyName}}
+          </h2>
+          <h2 style="font-family: Space Grotesk; font-size: xx-large; color: aliceblue;">{{data.header.monthRef}}</h2>
+        </div>
+        <div style="margin-top: 1rem; margin-bottom: 1rem;">
+          <p style="font-size: medium; margin-bottom: 1px;">{{data.header.employeeName}}</p>
+        </div>
+    </header>
+    <div>
+      <table style="width: 100%;">
+        <thead>
+
+          <tr>
+            <th colspan="7">
+              Pedido
+            </th>
+            <th colspan="6">
+              Comissão
+            </th>
+          </tr>
+
+          <tr>
+            <th style="text-align: start;">Ordem</th>
+            <th style="text-align: start;">Pedido</th>
+            <th style="text-align: start;">Cliente</th>
+            <th style="text-align: start;">Item</th>
+            <th style="text-align: start;">Descrição</th>
+            <th style="text-align: end;">Quantidade</th>
+            <th style="text-align: end;">Valor item</th>
+            <th style="text-align: end;">Porcentagem</th>
+            <th style="text-align: end;">Valor</th>
+            <th style="text-align: end;">Dividido por</th>
+            <th style="text-align: end;">Recebe</th>
+            <th style="text-align: end;">Tipo de serviço</th>
+            <th style="text-align: end;">Dividido com</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          {{#each data.content}}
+          <tr>
+            <td style="text-align: center;">{{count}}</td>
+            <td style="text-align: start;">{{budgetShorId}}</td>
+            <td style="text-align: start;">{{budgeCustomerName}}</td>
+            <td style="text-align: center;">{{budgetItemOrder}}</td>
+            <td style="text-align: start;">{{budgetItemDescription}}</td>
+            <td style="text-align: end;">{{budgetItemQuantity}}</td>
+            <td style="text-align: end;">{{budgetItemNetAmount}}</td>
+            <td style="text-align: end;">{{commissionPercent}}</td>
+            <td style="text-align: end;">{{commissionGrossRecevedAmount}}</td>
+            <td style="text-align: end;">{{commissionDivisionBy}}</td>
+            <td style="text-align: end;">{{commissionNetReceveidAmount}}</td>
+            <td style="text-align: end;">{{commissionServieType}}</td>
+            <td style="text-align: center;">{{commissionEmployeesNameDivisonBy}}</td>
+          </tr>
+          {{/each}}
+
+        <tfoot>
+          <tr style="height: 2rem;">
+            <td colspan="5" style="text-align: end;">Total</td>
+            <td style="text-align: end; font-weight: bold;">{{data.footerTotalItems}}</td>
+            <td colspan="4"></td>
+            <td style="text-align: end; font-weight: bold">{{data.footerTotalCommissionReceved}}</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+
+  <div style="margin-top: 5rem;">
+    <footer>
+      <div style="display: flex; align-items: center; flex-direction: column; ">
+        <p>Assinatura</p>
+        <p>_________________________________________________________</p>
+        <p>{{data.header.employeeName}}</p>
+        <p>Relatorio mensal de comissão, favor fazer a conferencia da mesma!</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
