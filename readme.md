@@ -1,97 +1,81 @@
 # Hunter Module
 
-Projeto pessoal tirei do privado para que as pessoas interessadas possam ansalisar. É um projeto que faço a aplicação dos meus estudos de:
+This is a personal project that I have made public for interested parties to analyze. The project applies my studies in:
 
 - Node/TypeScript
-- Scraping with puppeteer -> Era uma das coisas que eu mais queria futricar (kkkkkk)
-- API RESTFull
+- Scraping with Puppeteer: Something I was very eager to explore (haha)
+- RESTful API
 - DTOs
 - Interfaces
-- Orientação a Objetos
-- Clean Architecture;
-- Domain Driven Design
-- Solid
-- Services Pattern
-- Repositories Pattern
-- MongoDB (Atlas) -> Escolhi o mongo com Atlas, pois gostaria de compreender mais sobre a ferramenta.
-- Build Pattern
+- Object-Oriented Programming
+- Clean Architecture
+- Domain-Driven Design
+- SOLID Principles
+- Service Pattern
+- Repository Pattern
+- MongoDB (Atlas): Chose MongoDB with Atlas to gain a deeper understanding of the tool.
+- Builder Pattern
 - Factory Pattern
 - Mapper Pattern
-- TDD com Vitest -> Teste é algo novo para mim, antes era algo que não focava tanto, pois para mim precisava focar mais na logica e conceitos. Mas que recentemente resolvi estudar e aplicar mais.
+- TDD with Vitest: Testing is a new area for me. Previously, I focused more on logic and concepts, but recently I've decided to study and apply it more.
 
-Quero aplicar ainda:
+Future plans include:
 
 - Domain Events
 - WatchList
 - Docker
-- Controle de Usuario como:
-  - Autenticação de rota
-  - Regras
+- User control with:
+  - Route authentication
+  - Rules
 
-Estou ciente que poderia estar fazendo uso de um framework como o NestJs. Mas optei por não usar, gostaria de fazer mais manual, mas tenho intenção de fazer uso no futuro.
+I'm aware that I could use a framework like NestJS, but I chose to implement things more manually for now, though I plan to use it in the future.
 
- Dentro desde projeto ainda elenca os projetos `WEB `e `DESKTP APP` que ainda não estão iniciados, o que há são ideias, e não é algo que estou focando muito por hora, estou me dedicando mais em compreender o backend. Mas tenho a ideia de fazer um app Web usando NextJS e para Windows usando Electron.
+Currently, this project also includes WEB and DESKTOP APP projects which are still just ideas. My primary focus is on understanding the backend. However, I plan to create a web app using NextJS and a Windows app using Electron.
 
-## Historia
+## Project Story
 
-Cliente deseja que as comissões sejam automatizadas atravez de um sistema. Onde tenha todos os pedidos faturados e seus itens para que assim item por intem seja informado a frente o nome(s) de quem eventualmente este relação aquela venda, receba suas devidas comissões. Cargos relacionados ao recebimento de comissão:
+A client wants commissions to be automated through a system. This system should include all invoiced orders and their items, indicating the name(s) of the individuals related to each sale, so they receive their respective commissions. Roles related to receiving commissions include:
 
-- Vendas
-- Produção
+- Sales
+- Production:
+- Windows:
+  - Ironworkers
+  - Assemblers
+  - Installers
+  - Service
+- Tempered Glass:
+  - Installation
+  - Service
 
-  - Esquadria
-    - Serralheiros
-    - Montadores
-    - Instaladores
-    - Serviço
-  - Temperado
-    - Instalação
-    - Serviço
-- Uma ou mais pessoas podem estar relacionada a um item, deve haver uma comissão informada, quantidade de participantes e os colaboradores que executaram.
+Multiple people can be associated with an item. A commission, the number of participants, and the workers involved must be indicated. For example, for a sliding door with 2 panels, quantity 2, and a net value of 3000, the calculation would be:
 
-  - Exemplo: Porta de correr 2 folhas, quantidade 2, 3000,00 (valor liquido).
-  - Então vamos se dizer que será dividido por 2 colaboradores, deve pegar a porcentagem de valor x e encontrar a comissão.
-    - 3000*0,015=45
-    - 450/2 = 22,5
-  - Final cada colaborador receberá do item R$ 22,50
-- Deve ser levado em consideração que pode haver lançamentos manuais, como ajuda de custo, ou uma forma diferente de lançamento, então seria interessante que podesse ter campos de lançamento extra, para informar valor, quantidade, comissão e valores.
+3000 * 0.015 = 45
+450 / 2 = 22.5
+Each worker would receive R$ 22.50 for the item.
 
-### Problematica
+Manual entries should also be considered, such as allowances or other types of entries, so fields for extra entries to specify value, quantity, commission, and amounts would be useful.
 
-A empresa alvo, faz uso de um sistema chamado Wvetro, este sistema não há rota de comunicação externa.
+Problem
 
-### Solução
+The target company uses a system called Wvetro, which lacks external communication routes.
 
-Dito isso a maneira de fazer a captura dos dados será de forma manual, fazendo o uso do `puppeteer`.
+Solution
+
+Data capture will be done manually using Puppeteer.
+Before apply business rules.
 
 ## To do
-
-- [X] Services de scraping no site alvo de todos os itens faturados e seus itens
-- [X] Ao capturar um pedido por completo, salvar com a flag `captured` no mongoDB. Assim, não será capturado novamente. Caso a captura não seja completa, salvar com a flag `captured: false` no mongoDB. Assim, será capturado novamente. Por padrão o valor captured deve ser false.
-- [X] Normalização desde dados para a regra de negócio da aplicação
-- [X] Após normalização criar budget, items, customers, addresses, employees
-- [X] Fazer a persistencia dos dados capturados no mongoDB.
-
-* [X] Incluir Builder na classe de BudgetHuntService
-* [X] Incluir sistema de log
-* [X] Incluir retorno de erro dos metodos de BudgetHunt
-* [X] Incluir retorno nas funções da classe BudgetHunt Service
-* [X] Salvar no banco de dados
-* [X] Criar módulo de comissão
-
-  * [X] Tipos de serviço
-  * [X] Relatório
-  * [X] Rota com os dados do relatorio mensal de comissão
-* [ ] Módulo de Hunt deve ser executado uma Cron para pegar automaticamente os dados a cada determinado tempo. Podendo ser de 1h em 1h.
-
-  * [ ] Ignorando os dados já capturados.
-  * [ ] Deve persistir no banco de dados as tentativas com status de criado, executando, erro e concluido.
-
-- [ ] Faça a captura de todos os orçentos, caso ja registrado fazer a atualização.
-- [ ] Faça a captura apenas de uma lista de pedido, caso ja registrado fazer a atualização. Ex: [1] ou [2,3,4]
-- [ ] Quantidade x por dia fazer a captura e atualização dos orçamentos faturados
-- [ ] Implementar Domain Events para quando capturar os dados, fazer atualização no banco do Hunter. E isso avisar o frontend
-
-## Relatório
-
-- [ ] Dentro de "Commission", contém a ideia do relatório. Porém acredito que seja algo que deva ser gerado pelo frontend. Mas que é algo que deve ser persistido como os dados que geraram aquele relatório e o relatório.
+- [X] Scraping services on the target site for all invoiced items.
+- [X] Upon capturing an entire order, save it with the flag captured in MongoDB to avoid recapturing. If the capture is incomplete, save it with the flag captured: false in MongoDB to ensure it is recaptured. By default, captured should be false.
+- [X] Normalize these data according to the application's business rules.
+- [X] After normalization, create budgets, items, customers, addresses, employees.
+- [X] Persist the captured data in MongoDB.
+- [X] Include a Builder in the BudgetHuntService class.
+- [X] Add a logging system.
+- [X] Add error returns in BudgetHunt methods.
+- [X] Add returns in BudgetHunt Service class functions.
+- [X] Save to the database.
+- [X] Create a commission module:
+  - [X] Service types
+  - [X] Report
+  - [X] Route with monthly commission report data.
