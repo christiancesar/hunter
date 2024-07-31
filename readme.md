@@ -65,6 +65,7 @@ Data capture will be done manually using Puppeteer.
 Before apply business rules.
 
 ## To do
+
 - [X] Scraping services on the target site for all invoiced items.
 - [X] Upon capturing an entire order, save it with the flag captured in MongoDB to avoid recapturing. If the capture is incomplete, save it with the flag captured: false in MongoDB to ensure it is recaptured. By default, captured should be false.
 - [X] Normalize these data according to the application's business rules.
@@ -79,3 +80,4 @@ Before apply business rules.
   - [X] Service types
   - [X] Report
   - [X] Route with monthly commission report data.
+- [ ] Separate Hunting module to another app, the Huntig Module will the microservice.
