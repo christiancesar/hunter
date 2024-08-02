@@ -1,22 +1,14 @@
 import { Logger } from "@shared/loggers/Logger";
 import { Request, Response } from "express";
+import HuntersRepository from "../repositories/prisma/HuntersRepository";
 import {
   BudgetHunterBuilderService,
   BudgetStatus,
-  HuntParams,
 } from "../services/BudgetHunterService";
-import CreateJobHuntService from "../services/CreateJobHuntService";
 import ListAllHuntersJobService from "../services/ListAllHuntersJobService";
-import HuntersRepository from "../repositories/prisma/HuntersRepository";
 import ShowHunterJobService from "../services/ShowHunterJobService";
 
 type GetBudgetHunterRequestParams = {
-  credentials: {
-    user: string;
-    password: string;
-    license: string;
-    url: string;
-  };
   filter: {
     initialDate: string;
     finalDate: string;
@@ -28,44 +20,18 @@ type GetBudgetHunterRequestParams = {
 
 export default class HunterController {
   async create(request: Request, response: Response): Promise<Response> {
-    const { credentials, filter } =
-      request.body as GetBudgetHunterRequestParams;
-    const huntersRepository = new HuntersRepository();
-    const createJobHuntService = new CreateJobHuntService(huntersRepository);
-    const hunter = await createJobHuntService.execute({
-      credentials: {
-        user: credentials.user,
-        password: credentials.password,
-        license: credentials.license,
-      },
-      filter: {
-        budgetId: filter.budgetId,
-        budgetStatus: filter.budgetStatus,
-        finalDate: filter.finalDate,
-        huntPagesQuantity: filter.huntPagesQuantity,
-        initialDate: filter.initialDate,
-      },
-    });
+    const { filter } = request.body as GetBudgetHunterRequestParams;
 
     const budgetHuntService = new BudgetHunterBuilderService();
-    const budgetHunter = budgetHuntService
-      .setUser(credentials.user)
-      .setPassword(credentials.password)
-      .setLicense(credentials.license)
-      .setUrl(credentials.url)
-      .build();
+    const budgetHunter = budgetHuntService.build();
 
     const logger = new Logger(true);
     budgetHunter.addObserver(logger);
+    budgetHunter.toHunt(filter);
 
-    budgetHunter.toHunt(
-      { filter, huntPagesQuantity: filter.huntPagesQuantity },
-      hunter.id,
-      huntersRepository,
-    );
-
-    return response.json(hunter);
+    return response.status(200).json();
   }
+
   async show(request: Request, response: Response): Promise<Response> {
     const { id } = request.params;
     const huntersRepository = new HuntersRepository();

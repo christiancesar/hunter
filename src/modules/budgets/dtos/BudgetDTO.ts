@@ -1,5 +1,4 @@
 import { BudgetItemsDTO } from "./BudgetItemsDTO";
-import { LooseItemDTO } from "./LooseItemDTO";
 
 export type BudgetDTO = {
   shortId: number;

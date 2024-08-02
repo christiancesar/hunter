@@ -7,7 +7,8 @@ import puppeteer, { Browser, Page } from "puppeteer";
 import { BudgetHuntedDTO } from "../dtos/BudgetHuntedDTO";
 import { BudgetItemHuntedDTO } from "../dtos/BudgetItemHuntedDTO";
 import { LooseItemHuntedDTO } from "../dtos/LooseItemHuntedDTO";
-import { IHuntersRepository } from "../repositories/interfaces/IHuntersRepository";
+import { ScrapingDataNormalizeService } from "./ScrapingDataNormalizeService";
+import { ScrapingDataNormalizeServiceFactory } from "../factories/ScrapingDataNormalizeServiceFactory";
 
 type BudgetHunterParams = {
   user: string;
@@ -41,6 +42,7 @@ class BudgetHunter extends Subject {
   private page: Page;
 
   private budgetsHuntedInMemoryRepository: BudgetsHuntedInMemoryRepository;
+  private scrapingDataNormalizeService: ScrapingDataNormalizeService;
 
   constructor({ user, password, license, url }: BudgetHunterParams) {
     super();
@@ -53,6 +55,9 @@ class BudgetHunter extends Subject {
 
     this.budgetsHuntedInMemoryRepository =
       new BudgetsHuntedInMemoryRepository();
+
+    this.scrapingDataNormalizeService =
+      ScrapingDataNormalizeServiceFactory.make();
   }
 
   private async configure(): Promise<void> {
@@ -326,6 +331,7 @@ class BudgetHunter extends Subject {
           });
 
           budgetsHunted.push(...budgets);
+
           this.notifyObservers({
             className: this.constructor.name,
             methodName: this.getBudgets.name,
@@ -408,6 +414,8 @@ class BudgetHunter extends Subject {
       message: "STARTING TO GET ITEMS BUDGETS ",
       logType: LogType.INFO,
     });
+
+    //TODO: Compare budgets hunted in database with budgets hunted in memory, and get only the news budgets
 
     let budgetsHunted = await this.budgetsHuntedInMemoryRepository.findAll();
 
@@ -501,7 +509,9 @@ class BudgetHunter extends Subject {
           looseItems: getLooseItems,
         } as BudgetHuntedDTO;
 
-        await this.budgetsHuntedInMemoryRepository.update(budgetsHuntedUpdated);
+        //Todo: Update budget hunted in real database
+        // await this.budgetsHuntedInMemoryRepository.update(budgetsHuntedUpdated); removed because it is save in memory
+        await this.scrapingDataNormalizeService.execute(budgetsHuntedUpdated);
 
         const message = `
           Budget: ${index + 1} of ${budgetsHunted.length},
@@ -666,30 +676,10 @@ export class BudgetHunterBuilderService {
   private url: string;
 
   constructor() {
-    this.user = "";
-    this.password = "";
-    this.license = "";
-    this.url = "";
-  }
-
-  setUser(user: string): BudgetHunterBuilderService {
-    this.user = user;
-    return this;
-  }
-
-  setPassword(password: string): BudgetHunterBuilderService {
-    this.password = password;
-    return this;
-  }
-
-  setLicense(license: string): BudgetHunterBuilderService {
-    this.license = license;
-    return this;
-  }
-
-  setUrl(url: string): BudgetHunterBuilderService {
-    this.url = url;
-    return this;
+    this.user = process.env.WVETRO_USER || "";
+    this.password = process.env.WVETRO_PASSWORD || "";
+    this.license = process.env.WVETRO_LICENSE || "";
+    this.url = process.env.WVETRO_URL || "";
   }
 
   getParams(): BudgetHunterParams {

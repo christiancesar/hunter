@@ -51,6 +51,7 @@ export default class CustomersRepository implements ICustomersRepository {
         address: true,
       },
     });
+
     return customer;
   }
 

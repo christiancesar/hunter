@@ -19,13 +19,13 @@ export type CreateBudgetItemDTO = {
   height: number;
   glass: string;
 };
+
+export type BudgetItemsIds = {
+  id: string;
+};
 export interface IBudgetItemsRepository {
   create(budgetItem: CreateBudgetItemDTO): Promise<BudgetItemEntity>;
   findById(id: string): Promise<BudgetItemEntity | null>;
   findByBudgetShortId(budgetShortId: number): Promise<BudgetItemEntity | null>;
-  // findByBudgetShortIdAndOrder(budgetShortId: number, order: number): Promise<BudgetItemEntity | undefined>;
-  // update(budgetItem: BudgetItemEntity): Promise<BudgetItemEntity>;
-  // delete(id: string): Promise<void>;
-  // deleteByBudgetShortId(budgetShortId: number): Promise<void>;
-  // deleteByBudgetShortIdAndOrder(budgetShortId: number, order: number): Promise<void>;
+  createMany(data: CreateBudgetItemDTO[]): Promise<BudgetItemsIds[]>;
 }

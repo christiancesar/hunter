@@ -6,8 +6,8 @@ export default class ListAllBudgetsService {
     this.budgetsRepository = budgetsRepository;
   }
 
-  async execute(): Promise<BudgetEntity[]> {
-    const budgets = await this.budgetsRepository.findAll();
+  async execute(page: number): Promise<any> {
+    const budgets = await this.budgetsRepository.findAll(page);
     return budgets;
   }
 }

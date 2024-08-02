@@ -2,7 +2,6 @@ export type CreateBudgetDTO = {
   shortId: number;
   customerId: string;
   itemsIds: string[];
-  // looseItemsIds: string[];
   license: number;
   billedAt: Date | string;
   soldAt: Date | string;

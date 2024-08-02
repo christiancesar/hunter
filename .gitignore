@@ -3,3 +3,4 @@ node_modules/
 upload
 assets/sheets/
 server/src/modules/hunters/repositories/files/
+**/*.log

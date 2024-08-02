@@ -13,8 +13,8 @@ export const statusBudget = {
   VENDA: "sold",
 } as const;
 
-class BudgetHuntedMapper {
-  toDomain(budget: BudgetHuntedDTO): BudgetDTO {
+export class BudgetHuntedMapper {
+  static toDomain(budget: BudgetHuntedDTO): BudgetDTO {
     const phones = [budget.Fone, budget.Fone2, budget.Celular].filter(
       (phone) => {
         if (phone.trim() !== "") {
@@ -97,5 +97,3 @@ class BudgetHuntedMapper {
     };
   }
 }
-
-export default new BudgetHuntedMapper();
