@@ -9,6 +9,8 @@ import { BudgetItemHuntedDTO } from "../dtos/BudgetItemHuntedDTO";
 import { LooseItemHuntedDTO } from "../dtos/LooseItemHuntedDTO";
 import { ScrapingDataNormalizeService } from "./ScrapingDataNormalizeService";
 import { ScrapingDataNormalizeServiceFactory } from "../factories/ScrapingDataNormalizeServiceFactory";
+import { CompareBudgetsHuntToBudgetsPersistedService } from "./CompareBudgetsHuntToBudgetsPersistedService";
+import { CompareBudgetsHuntToBudgetsPersistedServiceFactory } from "../factories/CompareBudgetsHuntToBudgetsPersistedServiceFactory";
 
 type BudgetHunterParams = {
   user: string;
@@ -43,6 +45,7 @@ class BudgetHunter extends Subject {
 
   private budgetsHuntedInMemoryRepository: BudgetsHuntedInMemoryRepository;
   private scrapingDataNormalizeService: ScrapingDataNormalizeService;
+  private compareBudgetsHuntToBudgetsPersistedService: CompareBudgetsHuntToBudgetsPersistedService;
 
   constructor({ user, password, license, url }: BudgetHunterParams) {
     super();
@@ -58,6 +61,9 @@ class BudgetHunter extends Subject {
 
     this.scrapingDataNormalizeService =
       ScrapingDataNormalizeServiceFactory.make();
+
+    this.compareBudgetsHuntToBudgetsPersistedService =
+      CompareBudgetsHuntToBudgetsPersistedServiceFactory.make();
   }
 
   private async configure(): Promise<void> {
@@ -373,9 +379,12 @@ class BudgetHunter extends Subject {
         logType: LogType.INFO,
       });
 
-      const budgets = await this.budgetsHuntedInMemoryRepository.saveAll(
-        budgetsHunted,
-      );
+      const budgets =
+        await this.compareBudgetsHuntToBudgetsPersistedService.execute(
+          budgetsHunted,
+        );
+
+      await this.budgetsHuntedInMemoryRepository.saveAll(budgets);
 
       this.notifyObservers({
         className: this.constructor.name,
