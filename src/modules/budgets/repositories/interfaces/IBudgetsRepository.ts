@@ -15,5 +15,6 @@ export interface IBudgetsRepository {
     shortId: number,
     license: number,
   ): Promise<BudgetEntity | null>;
-  findAll(page: number): Promise<BudgetsFindMany>;
+  listAllBudgetsPerPage(page: number): Promise<BudgetsFindMany>;
+  listMany(): Promise<Omit<BudgetEntity, "customer" | "items">[]>;
 }

@@ -1,5 +1,4 @@
 import { BudgetItemEntity } from "./BudgetItemEntity";
-import { BudgetLooseItemEntity } from "./BudgetLooseItemEntity";
 import { CustomerEntity } from "./CustomerEntity";
 
 export interface BudgetEntity {
@@ -8,7 +7,6 @@ export interface BudgetEntity {
   license: number;
   customer?: CustomerEntity;
   items?: BudgetItemEntity[];
-  looseItems?: BudgetLooseItemEntity[];
   billedAt: Date;
   soldAt: Date;
   registeredAt: Date;

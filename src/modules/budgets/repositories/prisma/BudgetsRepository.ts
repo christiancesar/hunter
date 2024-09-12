@@ -64,6 +64,7 @@ export default class BudgetsRepository implements IBudgetsRepository {
 
     return budget;
   }
+
   async findByShortIdAndLicense(
     shortId: number,
     license: number,
@@ -88,7 +89,7 @@ export default class BudgetsRepository implements IBudgetsRepository {
     return budget;
   }
 
-  async findAll(page: number): Promise<BudgetsFindMany> {
+  async listAllBudgetsPerPage(page: number): Promise<BudgetsFindMany> {
     const count = await prisma.budget.count();
     const pagelimit = Math.ceil(count / 20);
     const currentPage = page > pagelimit ? pagelimit : page;
@@ -107,5 +108,9 @@ export default class BudgetsRepository implements IBudgetsRepository {
     });
 
     return { budgets, currentPage, pagelimit, records: 20 };
+  }
+
+  async listMany(): Promise<Omit<BudgetEntity, "customer" | "items">[]> {
+    return prisma.budget.findMany();
   }
 }
